@@ -1,13 +1,11 @@
-﻿/// <summary>
+﻿using OpenClosedPrincipe.Account;
+/// <summary>
 /// Произвести рефакторинг кода в соответствии с принципом открытости/закрытости 
 /// </summary>
 namespace OpenClosedPrincipe
 {
-    public class Account
+    public class RegularAccount : IAccount
     {
-        // тип учетной записи
-        public string Type { get; set; }
-
         // баланс учетной записи
         public double Balance { get; set; }
 
